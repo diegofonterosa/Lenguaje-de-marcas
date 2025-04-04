@@ -6,19 +6,19 @@
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+    background-color: rgb(120, 19, 19);
+    color:rgb(12, 12, 12);
     line-height: 1.6;
-    padding: 20px;
+    padding: 26px;
 }
 
 header{
-    background-color: navy;
+    background-color: rgb(61, 75, 196);
     color: white;
-    padding: 30px 20px;
+    padding: 10px 0;
     text-align: center;
-    border-radius: 10px;
     margin-bottom: 30px;
+    border-radius: 30px;
 }
 
 .titulo-principal{
