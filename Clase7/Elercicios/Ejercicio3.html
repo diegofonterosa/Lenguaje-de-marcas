@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Inscripción</title>
+</head>
+<body>
+    <h1>Formulario de Inscripción a Cursos</h1>
+
+    <form action="#" method="post">
+        <!-- Nombre y apellidos -->
+        <label for="nombre">Nombre y Apellidos:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <!-- Correo electrónico -->
+        <label for="email">Correo Electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Edad, solo mayores de 16 -->
+        <label for="edad">Edad (mayores de 16 años):</label><br>
+        <input type="number" id="edad" name="edad" min="17" required><br><br>
+
+        <!-- Selector de cursos -->
+        <label for="curso">Selecciona el curso:</label><br>
+        <select id="curso" name="curso" required>
+            <option value="">-- Elige un curso --</option>
+            <option value="html">HTML5 Básico</option>
+            <option value="css">CSS para Principiantes</option>
+            <option value="javascript">Introducción a JavaScript</option>
+            <option value="python">Python para Empezar</option>
+        </select><br><br>
+
+        <!-- Botones de opción para elegir turno -->
+        <p>Elige tu turno:</p>
+        <input type="radio" id="mañana" name="turno" value="mañana" required>
+        <label for="mañana">Mañana</label><br>
+        <input type="radio" id="tarde" name="turno" value="tarde">
+        <label for="tarde">Tarde</label><br>
+        <input type="radio" id="noche" name="turno" value="noche">
+        <label for="noche">Noche</label><br><br>
+
+        <!-- Aceptación de condiciones -->
+        <input type="checkbox" id="condiciones" name="condiciones" required>
+        <label for="condiciones">Acepto las condiciones del curso</label><br><br>
+
+        <!-- Botón de envío -->
+        <input type="submit" value="Enviar inscripción">
+    </form>
+
+</body>
+</html>
