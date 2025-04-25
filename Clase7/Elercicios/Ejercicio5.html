@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Multimedia e Incrustaciones</title>
+</head>
+<body>
+    <h1>Ejemplo de Página Multimedia</h1>
+
+    <!-- Sección del video -->
+    <h2>Video de muestra</h2>
+    <p>Este es un video de ejemplo que se puede reproducir con controles:</p>
+    <video width="900" controls>
+        <source src="videos/Las mejores jugadas de Pau GASOL en el Top10 Toyota.mp4" type="video/mp4">
+        
+    </video>
+
+    <!-- Sección del audio -->
+    <h2>Audio de muestra</h2>
+    <p>Este es un archivo de audio que también tiene controles para reproducir o pausar:</p>
+    <audio controls>
+        <source src="audio-ejemplo.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento <code>audio</code>.
+    </audio>
+
+    <!-- Sección del mapa -->
+    <h2>Mapa de Google Maps</h2>
+    <p>Aquí puedes ver un mapa incrustado con <code>iframe</code> de Google Maps:</p>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2962.757469808796!2d-8.646798423906677!3d42.048380771223535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd259a9602b16479%3A0x1f457a9a79021f47!2sP.%C2%BA%20de%20Calvo%20Sotelo%2C%2031%2C%2036700%20Tuy%2C%20Pontevedra!5e0!3m2!1ses!2ses!4v1745593562970!5m2!1ses!2ses" 
+        width="400" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <!-- Sección del documento PDF -->
+    <h2>Documento PDF incrustado</h2>
+    <p>Este es un ejemplo de cómo mostrar un documento PDF público en la página:</p>
+    <iframe 
+        src="videos/EJERCICIOS PARA PRÁCTICAR EN SEMANA SANTA - LM.pdf" 
+        width="400" 
+        height="500">
+    </iframe>
+
+</body>
+</html>
