@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #444;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #17a2b8;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.contenido{
+    overflow: auto;
+}
