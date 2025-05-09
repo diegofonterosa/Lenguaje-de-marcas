@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+header, footer {
+  background-color: #333;
+  color: white;
+  padding: 3%;
+  text-align: center;
+}
+
+main {
+  padding: 5%;
+}
+
+section {
+  background-color: #ffffff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px #0000001a;
+}
+
+
+
+/* ===== Media query: Pantallas menores de 768px ===== */
+@media screen and (max-width: 768px) {
+  header {
+    background-color: #f9c74f; /* color claro */
+    color: #000;
+  }
+
+  section {
+    background-color: #d3eafd; /* otro color para las secciones */
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+}
