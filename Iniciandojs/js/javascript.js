@@ -22,5 +22,5 @@ function sumar(){
 
     let suma = parseInt(n1) + parseInt(n2);
 
-    document.getElementById("resultado").textContent = 
+    document.getElementById("resultado").textContent 
 }
