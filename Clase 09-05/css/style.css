@@ -2,9 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    /*
+    Es una propiedad qeu controla como se calculan las dimensiones
+    de un elemento (ancho y alto), en relación a su contenido padding y border
+
+    - content-box: Solo el contenido (padding y border se suman después)
+    - border-box: Incluye contenido + padding + border
+    
+    */
 }
 
-body{
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #444;
     background-color: #f4f4f4;
@@ -14,9 +23,87 @@ body{
     background-color: #17a2b8;
     padding: 20px;
     text-align: center;
-    color: white;
+    color:white;
 }
 
 .contenido{
     overflow: auto;
+    float: left;
+    width: 20%;
+   /*
+   Controla lo que ocurre cuando el contenido de un elemento
+   se desborda de su caja
+
+    - visible: Valor defecto. El contenido se sale de la caja. No se recorta
+    - hidden: Oculta el contenido que se sale del área.
+    - scroll: Muestra una barra de scroll
+    - auto: Muestra scroll si el contenido lo necesita
+
+   */
+
+}
+
+.menu {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.menu a{
+    display: block;
+    background-color: #d1ecf1;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color:#0c5460;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.main {
+    float: left;    
+    width: 55%;     
+    padding: 20px;  
+    background-color: #ffffff; 
+}
+
+.right {
+    float: left;    
+    width: 25%;     
+    padding: 20px;  
+    background-color: #eeee6d; 
+}
+
+
+.footer {
+    clear: both; 
+    background-color: #333333; 
+    color: white;             
+    text-align: center;       
+    padding: 15px;            
+}
+
+
+.main h2,
+.right h2 {
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.main p,
+.right p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .contenido,
+    .main,
+    .right {
+        float: none;     
+        width: 100%;     
+    }
 }
