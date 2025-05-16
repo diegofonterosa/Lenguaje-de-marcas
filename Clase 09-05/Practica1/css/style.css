@@ -4,7 +4,7 @@
     box-sizing: border-box;
 
     /*
-    Es una propiedad qeu controla como se calculan las dimensiones
+    Es una propiedad que controla como se calculan las dimensiones
     de un elemento (ancho y alto), en relación a su contenido padding y border
 
     - content-box: Solo el contenido (padding y border se suman después)
@@ -45,7 +45,7 @@ body {
 
 .menu {
     float: left;
-    width: 100%;
+    width: 20%;
     text-align: center;
     padding: 10px;
 }
@@ -55,34 +55,53 @@ body {
     background-color: #d1ecf1;
     padding: 10px;
     margin-top: 10px;
+    display: block;
     width: 100%;
     color:#0c5460;
     text-decoration: none;
     border-radius: 8px;
+    box-shadow: -1px 3px 8px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 3px 8px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 3px 8px -1px rgba(0,0,0,0.75);
     text-align: left;
+}
+
+.menu a:hover{
+    background-color: #bee5be;
+    transition: 0.3s;
 }
 
 .main {
     float: left;    
-    width: 55%;     
-    padding: 20px;  
-    background-color: #ffffff; 
+    width: 60%;     
+    padding: 0 20px;  
+    background-color: #fff3cd; 
 }
 
 .right {
     float: left;    
-    width: 25%;     
+    width: 20%;     
     padding: 20px;  
-    background-color: #eeee6d; 
+    background-color: #eeee6d;
+    margin-top: 10px;
+    text-align: center;
+    border-left: 4px solid #ffeeba; 
 }
 
 
 .footer {
     clear: both; 
-    background-color: #333333; 
+    background-color: #17a2b8; 
     color: white;             
     text-align: center;       
-    padding: 15px;            
+    padding: 10px;
+    margin-top: 10px;            
+}
+
+.contenido::after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
 
@@ -99,8 +118,8 @@ body {
 }
 
 
-@media screen and (max-width: 768px) {
-    .contenido,
+@media screen and (max-width: 600px) {
+    .menu,
     .main,
     .right {
         float: none;     
